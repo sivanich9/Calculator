@@ -65,7 +65,7 @@
   <testcase classname="TestCal" name="square_root_true_positive" time="0"/>
   <testcase classname="TestCal" name="factorial_true_positives" time="0"/>
   <testcase classname="TestCal" name="power_false_positives" time="0"/>
-  <testcase classname="TestCal" name="natural_log_false_positives" time="0.001"/>
-  <testcase classname="TestCal" name="factorial_false_positives" time="0"/>
+  <testcase classname="TestCal" name="natural_log_false_positives" time="0"/>
+  <testcase classname="TestCal" name="factorial_false_positives" time="0.001"/>
   <testcase classname="TestCal" name="power_true_positives" time="0"/>
 </testsuite>
