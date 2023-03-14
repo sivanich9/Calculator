@@ -22,5 +22,23 @@ pipeline {
                 } 
             }
         }
+        stage('Docker Build Image')
+        {
+            steps{
+                script{
+                    imageName = docker.build "sivani4/calculator:latest"
+                }
+            }
+        }
+        stage('Push Docker Image')
+        {
+            steps{
+                script{
+                    docker.withRegistry("", 'sivani4/calculator' ){
+                        imageName.push()
+                    }
+                }
+            }
+        }
     }
 }    
