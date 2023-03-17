@@ -1,0 +1,8 @@
+---
+- name: Copy jar file to inventory i.e. Pull docker image
+  hosts: all
+  tasks:
+          - name: Pull junit devops image 
+            docker_image:
+                  name: sivani4/calculator 
+                  source: pull

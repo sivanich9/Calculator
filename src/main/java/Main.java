@@ -1,5 +1,7 @@
 import java.util.Scanner;
 import java.lang.Math;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Main
 {
@@ -13,8 +15,12 @@ public class Main
     public static final String ANSI_CYAN = "\u001B[36m";
     public static final String ANSI_WHITE = "\u001B[37m";
 
+    private static final Logger logger = LogManager.getLogger(Main.class);
+
+
     public static void main(String[] args)
     {
+
         Scanner sc = new Scanner(System.in);
         Main calculator = new Main();
         System.out.println();
@@ -102,10 +108,13 @@ public class Main
     {
         try
         {
+            logger.info("[SQRT] - " + number);
             if(number < 0)
             {
+                logger.error("[ERROR - SQRT] - Square root function is given -ve number");
                 throw new IllegalArgumentException(ANSI_RED+"Cannot calculate square root of negative number"+ANSI_RESET);
             }
+            logger.info("[RESULT - SQRT] - " + Math.sqrt(number));
             return Math.sqrt(number);
         }
         catch (IllegalArgumentException e)
@@ -119,8 +128,10 @@ public class Main
     {
         try
         {
+            logger.info("[FACT] - " + number);
             if (number < 0)
             {
+                logger.error("[ERROR - FACT] - Factorial function is given -ve number");
                 throw new IllegalArgumentException(ANSI_RED+"Factorial is undefined for negative numbers"+ANSI_RESET);
             }
             double result = 1;
@@ -128,6 +139,7 @@ public class Main
             {
                 result *= i;
             }
+            logger.info("[RESULT - FACT] - " + result);
             return result;
         }
         catch (IllegalArgumentException e)
@@ -141,11 +153,14 @@ public class Main
     {
         try
         {
+            logger.info("[Ln] - " + number);
             if (number < 0 || number == 0)
             {
+                logger.error("[ERROR - Ln] - Natural logarithm function is given -ve number");
                 throw new IllegalArgumentException(ANSI_RED+"Natural logarithm is undefined for zero and negative numbers"+ANSI_RESET);
             }
             double result = Math.log(number);
+            logger.info("[RESULT - Ln] - " + result);
             return result;
         }
         catch (IllegalArgumentException e)
@@ -159,11 +174,14 @@ public class Main
     {
         try
         {
+            logger.info("[POW] - " + base + " " + exponent);
             if (base == 0 && exponent < 0)
             {
+                logger.error("[ERROR - POW] - Power function is given -ve number");
                 throw new IllegalArgumentException(ANSI_RED+"Cannot calculate power of zero with negative exponent"+ANSI_RESET);
             }
             double result = Math.pow(base, exponent);
+            logger.info("[RESULT - POW] - " + result);
             return result;
         }
         catch (IllegalArgumentException e)

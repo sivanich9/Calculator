@@ -5,14 +5,8 @@ pipeline {
     stages {
         stage('Git Pull stage') {
             steps {
-                git 'https://github.com/sivanich9/Calculator'
-            }
-        }
-        stage('Maven Build'){
-            steps{
-                script{
-                    sh 'mvn clean install'            
-                } 
+                git url: 'https://github.com/sivanich9/Calculator',
+                    branch: 'main'
             }
         }
         stage('Maven test'){
@@ -22,23 +16,33 @@ pipeline {
                 } 
             }
         }
-        stage('Docker Build Image')
-        {
+        stage('Maven Build'){
             steps{
                 script{
-                    imageName = docker.build "sivani4/calculator:latest"
+                    sh 'mvn clean install'            
+                } 
+            }
+        }    
+        stage('Docker Build Image'){
+            steps{
+                script{
+                     sh 'sudo docker build -t sivani4/calculator:latest .'
                 }
             }
         }
-        stage('Push Docker Image')
-        {
+        stage('Push Docker Image'){
             steps{
                 script{
-                    docker.withRegistry("", 'sivani4/calculator' ){
-                        imageName.push()
+                    withDockerRegistry([ credentialsId: "DockerJenkins", url: "" ]) 
+                    {
+                        sh 'sudo docker push sivani4/calculator:latest'
                     }
                 }
             }
         }
     }
 }    
+
+
+
+
