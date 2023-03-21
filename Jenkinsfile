@@ -22,27 +22,36 @@ pipeline {
                     sh 'mvn clean install'            
                 } 
             }
-        }    
+        }
         stage('Docker Build Image'){
             steps{
                 script{
-                     sh 'sudo docker build -t sivani4/calculator:latest .'
+                     sh 'docker build -t sivani4/calculator:latest .'
                 }
             }
         }
         stage('Push Docker Image'){
             steps{
                 script{
-                    withDockerRegistry([ credentialsId: "DockerJenkins", url: "" ]) 
+                    withDockerRegistry([ credentialsId: "dockercred", url: "" ]) 
                     {
-                        sh 'sudo docker push sivani4/calculator:latest'
+                        sh 'docker push sivani4/calculator:latest'
                     }
+                }
+            }
+        }
+        
+        stage("Ansible deploy") {
+            steps {
+                script {
+                    // sh "ssh-keygen -t rsa"
+                    // sh "ssh-copy-id  sivani@localhost"
+                    // ansiblePlaybook disableHostKeyChecking: true, installation: 'ansible_1', inventory: 'inventory', playbook: 'p2.yml'
+                    sh "/usr/bin/pip3 install docker"
+                    sh "ansible-playbook p2.yml -i inventory"
                 }
             }
         }
     }
 }    
-
-
-
 
