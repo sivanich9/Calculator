@@ -42,3 +42,47 @@
 16/03/2023:13:40:09 145 [Main.java] [INFO] Main [RESULT - POW] - 1.0
 16/03/2023:13:40:09 145 [Main.java] [INFO] Main [POW] - 3.0 2.0
 16/03/2023:13:40:09 146 [Main.java] [INFO] Main [RESULT - POW] - 9.0
+21/03/2023:11:43:55 051 [Main.java] [INFO] Main [Ln] - 1.0
+21/03/2023:11:43:55 057 [Main.java] [INFO] Main [RESULT - Ln] - 0.0
+21/03/2023:11:43:55 060 [Main.java] [INFO] Main [SQRT] - 25.0
+21/03/2023:11:43:55 061 [Main.java] [INFO] Main [RESULT - SQRT] - 5.0
+21/03/2023:11:43:55 062 [Main.java] [INFO] Main [SQRT] - 1.0
+21/03/2023:11:43:55 062 [Main.java] [INFO] Main [RESULT - SQRT] - 1.0
+21/03/2023:11:43:55 063 [Main.java] [INFO] Main [SQRT] - 0.0
+21/03/2023:11:43:55 064 [Main.java] [INFO] Main [RESULT - SQRT] - 0.0
+21/03/2023:11:43:55 065 [Main.java] [INFO] Main [SQRT] - 25.0
+21/03/2023:11:43:55 066 [Main.java] [INFO] Main [RESULT - SQRT] - 5.0
+21/03/2023:11:43:55 067 [Main.java] [INFO] Main [SQRT] - 1.0
+21/03/2023:11:43:55 067 [Main.java] [INFO] Main [RESULT - SQRT] - 1.0
+21/03/2023:11:43:55 068 [Main.java] [INFO] Main [SQRT] - 0.0
+21/03/2023:11:43:55 068 [Main.java] [INFO] Main [RESULT - SQRT] - 0.0
+21/03/2023:11:43:55 070 [Main.java] [INFO] Main [FACT] - 8.0
+21/03/2023:11:43:55 070 [Main.java] [INFO] Main [RESULT - FACT] - 40320.0
+21/03/2023:11:43:55 071 [Main.java] [INFO] Main [FACT] - 3.0
+21/03/2023:11:43:55 071 [Main.java] [INFO] Main [RESULT - FACT] - 6.0
+21/03/2023:11:43:55 072 [Main.java] [INFO] Main [FACT] - 0.0
+21/03/2023:11:43:55 072 [Main.java] [INFO] Main [RESULT - FACT] - 1.0
+21/03/2023:11:43:55 082 [Main.java] [INFO] Main [POW] - 2.0 5.0
+21/03/2023:11:43:55 083 [Main.java] [INFO] Main [RESULT - POW] - 32.0
+21/03/2023:11:43:55 083 [Main.java] [INFO] Main [POW] - 9.0 0.0
+21/03/2023:11:43:55 084 [Main.java] [INFO] Main [RESULT - POW] - 1.0
+21/03/2023:11:43:55 084 [Main.java] [INFO] Main [POW] - 3.0 2.0
+21/03/2023:11:43:55 084 [Main.java] [INFO] Main [RESULT - POW] - 9.0
+21/03/2023:11:43:55 085 [Main.java] [INFO] Main [Ln] - 15.0
+21/03/2023:11:43:55 086 [Main.java] [INFO] Main [RESULT - Ln] - 2.70805020110221
+21/03/2023:11:43:55 086 [Main.java] [INFO] Main [Ln] - 29.0
+21/03/2023:11:43:55 087 [Main.java] [INFO] Main [RESULT - Ln] - 3.367295829986474
+21/03/2023:11:43:55 087 [Main.java] [INFO] Main [Ln] - 1.0
+21/03/2023:11:43:55 087 [Main.java] [INFO] Main [RESULT - Ln] - 0.0
+21/03/2023:11:43:55 089 [Main.java] [INFO] Main [FACT] - 6.0
+21/03/2023:11:43:55 089 [Main.java] [INFO] Main [RESULT - FACT] - 720.0
+21/03/2023:11:43:55 090 [Main.java] [INFO] Main [FACT] - 5.0
+21/03/2023:11:43:55 090 [Main.java] [INFO] Main [RESULT - FACT] - 120.0
+21/03/2023:11:43:55 091 [Main.java] [INFO] Main [FACT] - 0.0
+21/03/2023:11:43:55 091 [Main.java] [INFO] Main [RESULT - FACT] - 1.0
+21/03/2023:11:43:55 092 [Main.java] [INFO] Main [POW] - 2.0 5.0
+21/03/2023:11:43:55 093 [Main.java] [INFO] Main [RESULT - POW] - 32.0
+21/03/2023:11:43:55 093 [Main.java] [INFO] Main [POW] - 9.0 0.0
+21/03/2023:11:43:55 093 [Main.java] [INFO] Main [RESULT - POW] - 1.0
+21/03/2023:11:43:55 094 [Main.java] [INFO] Main [POW] - 3.0 2.0
+21/03/2023:11:43:55 094 [Main.java] [INFO] Main [RESULT - POW] - 9.0
