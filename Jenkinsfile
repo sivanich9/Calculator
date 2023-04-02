@@ -7,6 +7,7 @@ pipeline {
             steps {
                 git url: 'https://github.com/sivanich9/Calculator',
                     branch: 'main'
+                    
             }
         }
         stage('Maven test'){

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="8" failures="0" name="TestCal" time="1.459" errors="0" skipped="0">
+<testsuite tests="8" failures="0" name="TestCal" time="0.381" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.18+10-post-Ubuntu-0ubuntu122.04"/>
@@ -32,7 +32,7 @@
     <property name="java.class.version" value="55.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="5.19.0-35-generic"/>
+    <property name="os.version" value="5.19.0-38-generic"/>
     <property name="library.jansi.path" value="/usr/share/maven/lib/jansi-native"/>
     <property name="user.home" value="/home/sivani"/>
     <property name="user.timezone" value="Asia/Kolkata"/>
@@ -60,12 +60,12 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="TestCal" name="natural_log_true_positives" time="1.424"/>
-  <testcase classname="TestCal" name="square_root_false_positive" time="0.005"/>
-  <testcase classname="TestCal" name="square_root_true_positive" time="0.004"/>
-  <testcase classname="TestCal" name="factorial_true_positives" time="0.005"/>
-  <testcase classname="TestCal" name="power_false_positives" time="0.011"/>
-  <testcase classname="TestCal" name="natural_log_false_positives" time="0.003"/>
-  <testcase classname="TestCal" name="factorial_false_positives" time="0.004"/>
-  <testcase classname="TestCal" name="power_true_positives" time="0.003"/>
+  <testcase classname="TestCal" name="natural_log_true_positives" time="0.362"/>
+  <testcase classname="TestCal" name="square_root_false_positive" time="0.002"/>
+  <testcase classname="TestCal" name="square_root_true_positive" time="0.002"/>
+  <testcase classname="TestCal" name="factorial_true_positives" time="0.003"/>
+  <testcase classname="TestCal" name="power_false_positives" time="0.007"/>
+  <testcase classname="TestCal" name="natural_log_false_positives" time="0.001"/>
+  <testcase classname="TestCal" name="factorial_false_positives" time="0.002"/>
+  <testcase classname="TestCal" name="power_true_positives" time="0.002"/>
 </testsuite>
